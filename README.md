@@ -1,3 +1,3 @@
 # LeetCode Soluation
 
-LeetCode Soluation 
+LeetCode Soluation jsut record pratices
