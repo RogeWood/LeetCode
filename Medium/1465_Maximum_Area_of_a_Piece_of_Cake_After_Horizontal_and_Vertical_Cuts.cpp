@@ -1,9 +1,9 @@
 class Solution {
 public:
 
-    int findmax(vector<int>& arr) // 找出間距最大值
+    long long int findmax(vector<int>& arr) // 找出間距最大值
     {
-        int maxn = 0;
+        long long int maxn = 0;
         for(int i = 1; i < arr.size(); i++)
             maxn = (maxn < arr[i] - arr[i-1]) ? arr[i] - arr[i-1] : maxn;
         return maxn;
@@ -21,8 +21,7 @@ public:
         setCut(horizontalCuts, h);
         setCut(verticalCuts, w);
 
-        long long int maxh = findmax(horizontalCuts), maxv = findmax(verticalCuts); // 數字極大 開 long long
-
-        return maxh * maxv % 1000000007;
+        // 數字極大 開 long long
+        return findmax(horizontalCuts) * findmax(verticalCuts) % 1000000007;
     }
 };
