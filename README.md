@@ -1,6 +1,6 @@
 # LeetCode Soluation
 
-LeetCode Soluation jsut record pratices
+LeetCode Soluation jsut record pratices  
 `comment out with Chinese`
 
 
