@@ -6,8 +6,7 @@ public:
         unsigned int a = 0, b = x;
         while(b)
         {
-            a = a*10;
-            a += b%10;
+            a = a*10 + b%10;
             b /= 10;
         }
         return a == x;
