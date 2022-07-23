@@ -10,3 +10,4 @@ LeetCode Soluation jsut record pratices
 ### non soluation
 97
 1473
+473
