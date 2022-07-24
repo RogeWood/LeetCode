@@ -12,3 +12,6 @@ LeetCode Soluation jsut record pratices
 1473
 473
 576
+629
+1074
+792
