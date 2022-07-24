@@ -11,3 +11,4 @@ LeetCode Soluation jsut record pratices
 97
 1473
 473
+576
