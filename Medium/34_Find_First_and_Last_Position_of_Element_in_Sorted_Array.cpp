@@ -1,3 +1,4 @@
+// O(n)
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
@@ -18,5 +19,21 @@ public:
             }
         
         return {fpos, lpos};
+    }
+};
+// O(log n)
+// Solution link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/discuss/2329415/C%2B%2B-or-STL-or-5-Line-code-or-Bits-100-or-Test-Time-Saving-Method
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        auto low = lower_bound(nums.begin(),nums.end(),target);
+        auto up = upper_bound(nums.begin(),nums.end(),target);
+        
+        if(!binary_search(nums.begin(),nums.end(),target))    return {-1,-1};
+        
+        int first = low - nums.begin();
+        int last = up - nums.begin()-1;
+        
+        return {first ,last};
     }
 };
