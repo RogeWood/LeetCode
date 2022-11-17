@@ -6,7 +6,6 @@ public:
         while(start < n)
         {
             int middle = start/2 + n/2 + (start%2&&n%2);
-            cout << middle << endl;
             if(!guess(middle)) return middle;
             if(guess(middle) == -1) n = middle;
             else start = middle+1;
