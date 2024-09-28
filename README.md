@@ -1,7 +1,7 @@
 # LeetCode Soluation
 
 LeetCode Soluation jsut record pratices  
-`comment out with Chinese`
+`comment out in Chinese`
 
 
 ### Status
